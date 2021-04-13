@@ -8,7 +8,8 @@
 <title>Cerca una città</title>
 </head>
 <body>
-	<a href="index.jsp">torna alla home</a>
+<div>${loggedUser}</div>
+	<a href="Home.jsp">torna alla home</a>
 	<div>
 		<form method="get">
 			<input type="text" name="cityName" placeholder ="nome città">

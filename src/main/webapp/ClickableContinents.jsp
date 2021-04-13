@@ -8,8 +8,9 @@
 <title>Ricerca Da Continenti</title>
 </head>
 <body>
-	<a href="index.jsp">torna alla home</a>
-	<c:forEach items="${continentsList}" var="continent">
+<div>${loggedUser}</div>
+	<a href="Home.jsp">torna alla home</a>
+	<c:forEach items="${continentsList}" var="continent"> <!-- serve per ciclare i risultati; non fa comparire nulla finché la lista viene popolata -->
 		<p>
 			<a href="/EsercitazioneDb/GetNationsServlet?continentName=${continent.name}">${continent.name}</a>
 		</p>

@@ -7,15 +7,8 @@
 <title>Home</title>
 </head>
 <body>
-	<a href="cityInfo.jsp">
-		<input type="button" value="Cerca una città">
-	</a>
-	<a href="nationInfo.jsp">
-		<input type="button" value="Cerca una nazione">
-	</a>
-	<a href="/EsercitazioneDb/GetContinentsServlet">
-		<input type="button" value="Seleziona da continente"/>
-	</a>
-		
+		<form method="get" action="LoginServlet"> <input type = "text" name="sesso_anale_violentissimo_che_fa_uscire_sangue"/>
+		<input type="submit"/></form>
+		<p>${errorMessage}</p>
 </body>
 </html>
