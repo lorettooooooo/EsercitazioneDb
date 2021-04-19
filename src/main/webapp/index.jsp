@@ -7,8 +7,8 @@
 <title>Home</title>
 </head>
 <body>
-		<form method="get" action="LoginServlet"> <input type = "text" name="sesso_anale_violentissimo_che_fa_uscire_sangue"/>
-		<input type="submit"/></form>
+		<form method="get" action="LoginServlet"> <input type = "text" name="usernameInput"/>
+		<input type="submit" value = "scegli username"/></form>
 		<p>${errorMessage}</p>
 </body>
 </html>

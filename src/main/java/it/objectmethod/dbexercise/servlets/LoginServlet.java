@@ -14,11 +14,10 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String username = null;
-		username = request.getParameter("sesso_anale_violentissimo_che_fa_uscire_sangue");
+		String username = request.getParameter("usernameInput");
 		HttpSession session = request.getSession();
 		if (username == null || username.isBlank()) {
-			request.setAttribute("errorMessage", "è un nome del cazzo, coglione, scegline uno migliore");
+			request.setAttribute("errorMessage", "Nome utente non valido, inserire un nome utente valido");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 		} else {
 			session.setAttribute("loggedUser", username);

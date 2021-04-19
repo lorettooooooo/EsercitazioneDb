@@ -1,4 +1,4 @@
- package it.objectmethod.dbexercise.servlets;
+package it.objectmethod.dbexercise.servlets;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -22,7 +22,6 @@ public class GetCityServlet extends HttpServlet {
 		String input = request.getParameter("cityName");
 		ICityDao cityDao = new CityDaoImpl();
 		City city = null;
-		
 
 		try {
 			city = cityDao.getCityByName(input);
